@@ -33,6 +33,6 @@
 <li>handle hardware update</li>
 <li>improve sql search</li>
 <li>normalized sql tables</li>
-<li></li>
+
 </ol>
 
