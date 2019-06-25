@@ -7,8 +7,8 @@
 <p>Cluster Monitor Agent is an internal tool that monitors the cluster resources. It helps the infrastructure team to keep track of the hardware specifications and resource usages of a Linux cluster. It also helps to persist the data in an RDBMS databse</p>
 <h1 id="architecture-and-design">Architecture and Design</h1>
 <p>Architecture:<br>
- ![stack Overflow](http://lmsotfy.com/so.png)
-<img src="/blob/master/Host_Server_arch.jpg" alt="Server-host"></p>
+ 
+<img src="/Host_Server_arch.jpg" alt="Server-host"></p>
 <p>Tables:<br>
 <code>host_info</code> stores the hardware specification information whereas <code>host_usage</code> stores the resource usages information. There are two scripts written namely, <code>host_info.sh</code>  which collects the host hardware information and then inserts these information to the table host_info in the database. This script is execute once. <code>host_usage.sh</code> collects the current host usage and then insert the data into host_usage table. Crontab is used to trigger this script every minute. <code>init.sql</code> creates a database and two tables</p>
 <h1 id="usage">Usage</h1>
