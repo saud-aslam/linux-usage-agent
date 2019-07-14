@@ -8,9 +8,6 @@ db_name=$3
 user_name=$4
 password=$5
 
-
-
-
 host_id=$(cat ~/host_id)
 timestamp=$(vmstat -t |tail -1 |awk '{print $18,$19}')
 memory_free=$(vmstat --unit M |tail -1 |awk '{print $4}')
